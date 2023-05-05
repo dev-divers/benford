@@ -1,6 +1,6 @@
 
 /*****************************************************************
- *              FIRST DIGIT PROBABILITIES *                      *
+ *              FIRST DIGIT PROBABILITIES                        *
  *****************************************************************
  *                                                               *
  *  Returns an object representing the probability distribution  *
@@ -12,7 +12,7 @@
  *                                                               *
  ****************************************************************/
 
-export {isNumber,removeNonSignificantDigits,getFirstDigitCounts, getTotalValidNumbers, getProbabilities, getResult, firstDigitProbabilities };
+export { isNumber, removeNonSignificantDigits, getFirstDigitCounts, getTotalValidNumbers, getProbabilities, getResult, firstDigitProbabilities };
 
 // Checks whether the input string is a valid integer or decimal number 
 function isNumber(string) {
@@ -21,8 +21,9 @@ function isNumber(string) {
 
 // Remove non significant digit (0) 
 function removeNonSignificantDigits(string) {
-    // Remove non-significant zeros at the beginning or end of the string, as well as the decimal point if it is followed by non-significant zeros
-    string = string.replace(/^0+|(\.0+)?0+$/g, '$1');
+    // Remove zeros at the beginning of the string, including those after the decimal point
+    const regex = /^0*(\.)?0*/g;
+    string = string.replace(regex,'');
     // Return the modified string
     return string;
 }
@@ -31,7 +32,7 @@ function removeNonSignificantDigits(string) {
 function getFirstNonZeroDigit(string) {
     // Return null if the input string is not a valid integer or decimal number
     if (!isNumber(string)) return null;
-    // Remove non significant digits
+    // Remove non significant digits (0)
     const parseNumber = removeNonSignificantDigits(string);
     // Find the first non-zero digit (1 to 9) in the input string using a regular expression
     const firstNonZeroDigitMatch = parseNumber.match(/[1-9]/);
@@ -43,20 +44,19 @@ function getFirstNonZeroDigit(string) {
 const getFirstDigitCounts = (numbers) => {
     // Use the reduce method to iterate through each number in the input array and accumulate the counts
     return numbers.reduce((counts, number) => {
-      // Convert the number to a string and get the first non-zero digit
-      const firstDigit = getFirstNonZeroDigit(number.toString());
-      // If the first digit is not null, increment the count for the appropriate first digit in the counts array
-      if (firstDigit !== null) {
-        // Calculate the index in the counts array for the first digit (subtract 1 since the index starts at 0)
-        const index = firstDigit - 1;
-        // Increment the count for the first digit in the counts array
-        counts[index] = (counts[index] || 0) + 1;
-      }
-      
-      // Return the updated counts array
-      return counts;
+        // Convert the number to a string and get the first non-zero digit
+        const firstDigit = getFirstNonZeroDigit(number.toString());
+        // If the first digit is not null, increment the count for the appropriate first digit in the counts array
+        if (firstDigit !== null) {
+            // Calculate the index in the counts array for the first digit (subtract 1 since the index starts at 0)
+            const index = firstDigit - 1;
+            // Increment the count for the first digit in the counts array
+            counts[index] = (counts[index] || 0) + 1;
+        }
+        // Return the updated counts array
+        return counts;
     }, new Array(9).fill(0)); // Initialize the counts array with zeroes using the Array.fill() method
-  };
+};
 
 // Calculate the sum of all the counts in the firstDigitCounts array
 const getTotalValidNumbers = (firstDigitCounts) => {
