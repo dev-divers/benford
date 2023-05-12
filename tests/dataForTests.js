@@ -1,5 +1,5 @@
 
-// Combinaison of random numbers
+// Combinaison of random numbers in a string
 export const testStrings = [
     "0007823",
     "923000",

@@ -12,19 +12,28 @@
  *                                                               *
  ****************************************************************/
 
-export { isNumber, getProbabilities, getResult };
+export {isNumber, getProbabilities, getResult};
 
 // Checks whether the input string is a valid integer or decimal number 
 function isNumber(string) {
     return /^\d+(\.\d+)?$/.test(string);
 }
 
+// This function checks if all elements in an array are finite, non-NaN primitive numbers.
+function areAllNumbers(array) {
+    return array.every((element) => 
+        typeof element === 'number' && 
+        !isNaN(element) && 
+        Number.isFinite(element) && 
+        !(element instanceof Number)
+    );
+}
+
 // Remove non significant digit (0) 
 function nonSignificantDigitsRemover(string) {
-    // Remove zeros at the beginning of the string, including those after the decimal point
+    // Remove non significant zeros at the beginning and after the decimal point
     const regex = /^0*(\.)?0*/g;
     string = string.replace(regex, '');
-    // Return the modified string
     return string;
 }
 
@@ -34,9 +43,9 @@ function FirstNonZeroDigit(string) {
     if (!isNumber(string)) return null;
     // Remove non significant digits (0)
     const parseNumber = nonSignificantDigitsRemover(string);
-    // Find the first non-zero digit (1 to 9) in the input string 
+    // Return non-zero digits (1 to 9) in an array
     const firstNonZeroDigitMatch = parseNumber.match(/[1-9]/);
-    // Return the found digit 
+    // Return the first digit, or null
     return firstNonZeroDigitMatch ? parseInt(firstNonZeroDigitMatch[0], 10) : null;
 }
 
@@ -54,24 +63,26 @@ const firstDigitArray = (numbersArray) => {
             accumulator[index] = (accumulator[index] || 0) + 1;
         }
         return accumulator;
-    }, new Array(9).fill(0)); // Initials values
+    }, new Array(9).fill(0)); // Initials values in the array
 };
 
-// Calculate the sum of all the digits
+// Sum of all digits in the input array 
 const totalDigits = (firstDigitArray) => {
     return firstDigitArray.reduce((accumulator, current) => accumulator + current, 0);
 };
 
 // Calculate the probability of each first digit 
-const getProbabilities = (firstDigitArray, totalDigits) => {
-    return firstDigitArray.map((count) => count / totalDigits);
+const probabilitiesArray = (firstDigitArray, totalDigits) => {
+    return firstDigitArray.map((count) => console.log (count / totalDigits));
 };
 
 // Maps an array of probabilities to an object
-const getResult = (probabilities) => {
+const getResult = (probabilitiesArray) => {
     const result = {};
     for (let i = 0; i < probabilities.length; i++) {
-        result[i + 1] = probabilities[i];
+        // A new key-value pair is created in the result object 
+        result[i + 1] = probabilitiesArray[i];
     }
+    // Object's keys correspond to the digits
     return result;
 };
