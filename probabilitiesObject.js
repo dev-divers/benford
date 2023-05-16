@@ -12,12 +12,12 @@
  *                                                               *
  ****************************************************************/
 
-// Checks whether the input string is a valid integer or decimal number 
+// Checks (true/false) whether the input string is a valid integer or decimal number 
 function isNumber(string) {
     return /^\d+(\.\d+)?$/.test(string);
 }
 
-// Checks if all elements in an array are finite, non-NaN primitive numbers.
+// Checks (true/false) if all elements in an array are finite, non-NaN primitive numbers.
 function areAllNumbers(array) {
     return array.every((element) =>
         typeof element === 'number' &&
@@ -29,7 +29,7 @@ function areAllNumbers(array) {
 
 // Remove non significant digit (0) 
 function nonSignificantDigitsRemover(string) {
-    // Remove non significant zeros at the beginning and after the decimal point
+    // Remove non significant zeros at the beginning of the string
     const regexBegin = /^0*(\.)?0*/g;
     // Remove non significant zeros after the decimal point
     const regexEnd = /0+$/g;
