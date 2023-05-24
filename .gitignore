@@ -1,3 +1,13 @@
 # Dev
 dev.js
 test.js
+
+#fichiers
+node_modules/
+
+
+package-lock.json
+
+
+
+
