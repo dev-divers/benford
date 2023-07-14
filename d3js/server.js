@@ -17,6 +17,7 @@ server.listen(port, host, () => {
 
 */
 
+import { Express } from 'express';
 
 const express = require('express');
 

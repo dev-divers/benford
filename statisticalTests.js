@@ -1,5 +1,5 @@
 /*****************************************************************
- *              STATISTICAL TESTS                                  *
+ *              STATISTICAL TESTS                                *
  *****************************************************************
  *                                                               *
  *                                                               *
@@ -9,7 +9,12 @@
  *                                                               *
  ****************************************************************/
 
-// Number of times a particular digit (from 1 to 9) appears as the first digit in the given numbers
+
+
+/****************************************************************
+Number of times a particular digit (from 1 to 9) appears as the first digit in the given numbers
+
+****************************************************************/
 function observedFrequencies(numbers) {
   // Create an empty array of 9 columns filled with 0
   let freqs = new Array(9).fill(0);
@@ -24,16 +29,23 @@ function observedFrequencies(numbers) {
   return freqs;
 }
 
-// Array of theoretical frequencies according to Benford's law
+/****************************************************************
+Array of theoretical frequencies according to Benford's law
+
+****************************************************************/
 function benfordFrequencies() {
   let freqs = [];
   for (let i = 1; i <= 9; i++) {
+    // Benford's law if occurs if the leading digit d (d ∈ {1, ..., 9}) occurs with probability[10] : 
     freqs.push(Math.log10(1 + 1 / i));
   }
   return freqs;
 }
 
-// Object of theoretical frequencies according to Benford's law
+/****************************************************************
+Object of theoretical frequencies according to Benford's law
+
+****************************************************************/
 const getResult = (probabilitiesArray) => {
   const result = {};
   for (let i = 0; i < probabilitiesArray.length; i++) {
@@ -44,7 +56,10 @@ const getResult = (probabilitiesArray) => {
   return result;
 };
 
-// Deviation calcul (difference between observed and theoretical frequencies)
+/****************************************************************
+Deviation calcul (difference between observed and theoretical frequencies)
+
+****************************************************************/
 function calculateDeviations(observedFrequencies, benfordFrequencies) {
   const deviations = [];
   for (let i = 0; i < observedFrequencies.length; i++) {
@@ -59,7 +74,7 @@ let standardDeviation = (numbers, rounded) => {
   const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
   const mean = sum / numbers.length;
   // Squared deviations from mean
-  const meanDeviations = numbers.map((n) => n - mean, 2);
+  const meanDeviations = numbers.map((n) => n - mean);
   // Squared deviations
   const squaredDeviations = meanDeviations.map((n) => n * n);
   // Sum of squared deviations
