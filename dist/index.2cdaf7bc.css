@@ -1,0 +1,43 @@
+body {
+  background-color: #f0f0f0;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.container {
+  background-color: #fff;
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 5px #0003;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+label {
+  font: 1rem Fira Sans, sans-serif;
+  display: block;
+}
+
+input, label {
+  margin: .4rem 0;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
