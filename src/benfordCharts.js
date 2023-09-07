@@ -60,3 +60,56 @@ const myDataTab = Object.keys(myBenfordObject).map((cle) => ({
         }
     );
 })();
+
+
+(async function () {
+
+    const myData = myDataTab;
+
+    new Chart(
+        document.getElementById('benford3'),
+        {
+            type: 'bar',
+            options: {
+                animation: false,
+                plugins: {
+                    legend: {
+                        display: true
+                    },
+                    tooltip: {
+                        enabled: true
+                    }
+                }
+            },
+            data: {
+                labels: myData.map(row => row.cle),
+                datasets: [
+                    {
+                        label: 'Fréquence en % ',
+                        data: myData.map(row => row.valeur),
+                        backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                        borderColor: [
+                            'rgb(255, 159, 64)'
+                        ],
+                        borderWidth: 1
+                    }
+
+                ]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Fréquence d\'apparition du premier chiffre significatif selon la loi de Benford'
+                    }
+                }
+            }
+
+        }
+    );
+})();

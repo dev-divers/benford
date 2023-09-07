@@ -627,6 +627,50 @@ const myDataTab = Object.keys(myBenfordObject).map((cle)=>({
         }
     });
 })();
+(async function() {
+    const myData = myDataTab;
+    new (0, _autoDefault.default)(document.getElementById("benford3"), {
+        type: "bar",
+        options: {
+            animation: false,
+            plugins: {
+                legend: {
+                    display: true
+                },
+                tooltip: {
+                    enabled: true
+                }
+            }
+        },
+        data: {
+            labels: myData.map((row)=>row.cle),
+            datasets: [
+                {
+                    label: "Fr\xe9quence en % ",
+                    data: myData.map((row)=>row.valeur),
+                    backgroundColor: "rgba(255, 159, 64, 0.2)",
+                    borderColor: [
+                        "rgb(255, 159, 64)"
+                    ],
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            indexAxis: "y",
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: "top"
+                },
+                title: {
+                    display: true,
+                    text: "Fr\xe9quence d'apparition du premier chiffre significatif selon la loi de Benford"
+                }
+            }
+        }
+    });
+})();
 
 },{"chart.js/auto":"d8NN9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../benfordTools/statisticalTests.js":"c7abn"}],"d8NN9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

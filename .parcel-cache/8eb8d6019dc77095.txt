@@ -80,7 +80,7 @@
 110C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\source-map-js133383941234364052 1
 114C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\ramda\src\into.js133381712096041223 0
 123C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\source-map-js\package.json133383941233953261 0
-88C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist133383968407914783 1
+88C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist133385551857982306 1
 123C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\svgo\plugins\reusePaths.js133383941237449091 0
 90C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dev.js133287080624025979 0
 139C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\css-tree\cjs\utils\create-custom-error.cjs133383941234805172 0
@@ -207,8 +207,8 @@
 97C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\tests\test.js133337215476431177 0
 131C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\caniuse-lite\data\features\calc.js133383941238472742 0
 122C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\toidentifier\package.json133293415117846277 0
-104C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\src\benfordCharts.js133383968354938419 0
-98C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\src\index.html133383963590322116 0
+104C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\src\benfordCharts.js133385551561253789 0
+98C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\src\index.html133385551856235811 0
 138C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\@swc\helpers\cjs\_to_consumable_array.cjs133383941238132777 0
 119C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\core-js\stage\index.js133381712123517171 0
 121C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\core-js\proposals\url.js133381712151670279 0
@@ -1891,7 +1891,7 @@
 130C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\axios\lib\helpers\parseHeaders.js133381712089741832 0
 115C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\dayjs\locale\fr.js133381712091586660 0
 129C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\nth-check\lib\esm\index.d.ts.map133383941233932313 0
-106C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.d0396ea9.js133383968407864748 0
+106C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.d0396ea9.js133385551038702198 0
 111C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\touch\index.js133381712086203807 0
 132C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\ramda\es\internal\_isTransformer.js133381712090102377 0
 126C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\posthtml-render\dist\index.js133383941231433238 0
@@ -9790,7 +9790,7 @@
 128C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\caniuse-lite\data\regions\GD.js133383941241932631 0
 128C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\caniuse-lite\data\regions\GE.js133383941241932631 0
 128C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\caniuse-lite\data\regions\GF.js133383941241982647 0
-111C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.2cdaf7bc.css.map133383966734292639 0
+111C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.2cdaf7bc.css.map133385551037742939 0
 128C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\caniuse-lite\data\regions\GI.js133383941242022646 0
 151C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\@cubejs-client\core\dist\cubejs-client-core.umd.js.map133381712089439365 0
 128C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\caniuse-lite\data\regions\GL.js133383941242032635 0
@@ -12180,7 +12180,7 @@
 128C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\.bin\update-browserslist-db.cmd133383941245823866 0
 106C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\.bin\uuid133381712153907941 0
 110C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\node_modules\.bin\uuid.cmd133381712153907941 0
-107C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.2cdaf7bc.css133383966734232636 0
+107C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.2cdaf7bc.css133385551037692112 0
 106C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.a6965d49.js133383945938389606 0
-110C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.d0396ea9.js.map133383968407909188 0
-99C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.html133383966734752629 0
+110C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.d0396ea9.js.map133385551038763716 0
+99C:\Users\Antoine\Documents\Antoine Personnel\DEVELOPPEMENT\Loi de Bendord\workspace\dist\index.html133385551857961653 0
